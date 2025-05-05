@@ -29,7 +29,7 @@ jobs:
       - name: Run markdowmn lint
         run: |
           npm install remark-cli remark-preset-lint-consistent vfile-reporte.json
-          npx remark . --use remark-preset-lint-consistent --report vfile-report.json 2> r
+          npx remark . --use remark-preset-lint-consistent --report vfile-report-json 2> r
 
       - uses: actions/upload-artifact@v4
         with:
