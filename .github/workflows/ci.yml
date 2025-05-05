@@ -28,11 +28,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run markdowmn lint
         run: |
-          npm install remark-cli remark-preset-lint-consistent vfile-reporte.json
-          npx remark . --use remark-preset-lint-consistent --report vfile-report-json 2> r
+          npm install remark-cli remark-preset-lint-consistent vfile-reporter.json
+          npx remark . --use remark-preset-lint-consistent --report vfile-reporter.json 2> r
 
       - uses: actions/upload-artifact@v4
         with:
-          name: remark-lint-report
-          path: remark-lint-report.json
+          name: remark-lint-reporter
+          path: remark-lint-reporter.json
 
